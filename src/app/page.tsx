@@ -366,8 +366,8 @@ function HomePage() {
   const stats = [
     { number: "99.9%", label: "Uptime" },
     { number: "24/7", label: "Support" },
-    { number: "5", label: "Locations" },
-    { number: "30+", label: "Happy Clients" }
+    { number: "10+", label: "Locations" },
+    { number: "50+", label: "Happy Clients" }
   ];
 
   const whyChooseFeatures = [
