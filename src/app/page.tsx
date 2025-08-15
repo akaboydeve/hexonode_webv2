@@ -23,6 +23,7 @@ import { useRouter } from 'next/navigation';
 import './globals.css';
 import GlobalHighlightBar from '@/components/GlobalHighlightBar';
 import OfferModal from '@/components/OfferPopUp';
+import SpecialOfferSection from '@/components/SpecialOfferSection';
 
 
 function HomePage() {
@@ -38,6 +39,7 @@ function HomePage() {
   const [pingError, setPingError] = React.useState<string | null>(null);
   const [showVideo, setShowVideo] = React.useState(false);
   const [isPaymentModalOpen, setIsPaymentModalOpen] = React.useState(false);
+  const [ytOfferModal, setYtOfferModal] = React.useState(false);
 
   // Define a type for the location object
   type LocationType = {
@@ -862,8 +864,36 @@ function HomePage() {
               </span>
             </button>
           </div>
+
+          {/* Special Offer Section */}
+          <div className="mt-8">
+            {!ytOfferModal && (
+              <button
+                onClick={() => setYtOfferModal(true)}
+                className="group bg-gradient-to-r from-yellow-500/20 to-orange-600/20 border border-yellow-500/30 text-yellow-300 font-medium px-8 py-3 rounded-xl hover:from-yellow-500 hover:to-orange-600 hover:text-white hover:border-transparent transition-all duration-300 transform hover:scale-105 shadow-lg shadow-yellow-500/10"
+              >
+                <span className="flex items-center space-x-2">
+                  <span className="text-xl">🎉</span>
+                  <span>View Special Offer</span>
+                </span>
+              </button>
+            )}
+
+            {ytOfferModal && (
+              <SpecialOfferSection
+                onGetStarted={scrollToServices}
+                onViewServices={scrollToServices}
+                onDismiss={() => setYtOfferModal(false)}
+              />
+            )}
+          </div>
+
+
         </div>
+
+
       </section>
+
 
       {/* Services Section - Moved higher up */}
       <section id="services" className="py-16 relative bg-slate-900">
