@@ -415,7 +415,7 @@ function HomePage() {
   ];
 
   React.useEffect(() => {
-    const timer = setTimeout(() => setShowVideo(true), 2000);
+    const timer = setTimeout(() => setShowVideo(true), 4000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -733,10 +733,10 @@ function HomePage() {
               backgroundImage: 'url(https://i.postimg.cc/pTYc03Qw/image.png)'
             }}
           ></div>
-          {/* Background Video (fades in after 2s) */}
+          {/* Background Video (fades in after some seconds) */}
           <video
             className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${showVideo ? 'opacity-100' : 'opacity-0'}`}
-            src="https://aiclassroomin.s3.eu-north-1.amazonaws.com/uploads/0703.mp4 "
+            src="https://r2.hexonode.com/0703.mp4"
             autoPlay
             loop
             muted
