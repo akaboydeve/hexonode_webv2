@@ -24,16 +24,14 @@ const OfferModal = () => {
     }
 
     return (
-        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex justify-center items-center p-4">
-            <div className="bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-2xl shadow-2xl text-center max-w-md w-full border border-slate-700 transform animate-in fade-in zoom-in duration-300">
+        <div className="fixed mt-20 inset-0 bg-black/60 backdrop-blur-sm z-50 flex justify-center items-center p-4">
+            <div className="bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-2xl shadow-2xl text-center max-w-md w-full border border-slate-700 transform animate-in fade-in zoom-in duration-300 relative">
                 {/* Close button */}
                 <button
                     onClick={closeModal}
-                    className="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors"
+                    className="absolute top-3 right-3 w-8 h-8 bg-slate-700 hover:bg-slate-600 text-slate-300 hover:text-white rounded-full flex items-center justify-center transition-all duration-200 text-lg font-bold border border-slate-600"
                 >
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
+                    ×
                 </button>
 
                 {/* Celebration icon */}
