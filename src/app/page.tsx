@@ -9,11 +9,9 @@ import {
   ArrowRight,
   Zap,
   Shield,
-  Clock,
-  Star,
   Menu,
   X,
-  Wifi,
+  Clock,
   Activity,
   CheckCircle,
   Award,
@@ -22,7 +20,6 @@ import {
   ChevronDown
 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
-import axios from 'axios';
 import './globals.css';
 import GlobalHighlightBar from '@/components/GlobalHighlightBar';
 import OfferModal from '@/components/OfferPopUp';
@@ -95,7 +92,7 @@ function HomePage() {
     setPingError(null);
 
     const url = `http://${location.ip}:1235/ping`;
-    let apiDuration = [
+    const apiDuration = [
       {
         start: 0,
         end: 0,
@@ -208,7 +205,7 @@ function HomePage() {
     router.push('/database-hosting');
   };
 
-  const handleLocationClick = (location: any) => {
+  const handleLocationClick = (location: { name: string; flag: string; status: string; description: string; link?: string; backgroundImage: string }) => {
     if (location.name === 'India') {
       setVpsLocationModal(false);
       router.push('/india-vps');
@@ -1102,7 +1099,7 @@ function HomePage() {
                     ))}
                   </div>
                   <p className="text-slate-300 leading-relaxed">
-                    "Best hosting ever ❤️The server has Greate performance 99.99% uptime and high performance ever"
+                    &quot;Best hosting ever ❤️The server has Greate performance 99.99% uptime and high performance ever&quot;
                   </p>
                 </div>
 
@@ -1123,7 +1120,7 @@ function HomePage() {
                     ))}
                   </div>
                   <p className="text-slate-300 leading-relaxed">
-                    "I have purchased 6x discord bot hosting from them them, the uptime is 99.99 percent and Unbelievable support "
+                    &quot;I have purchased 6x discord bot hosting from them them, the uptime is 99.99 percent and Unbelievable support&quot;
                   </p>
                 </div>
 
@@ -1144,7 +1141,7 @@ function HomePage() {
                     ))}
                   </div>
                   <p className="text-slate-300 leading-relaxed">
-                    "99.9% UPTIME WITH HIGH PERFORMANCE HOSTING I LOVE IT ❤️."
+                    &quot;99.9% UPTIME WITH HIGH PERFORMANCE HOSTING I LOVE IT ❤️.&quot;
                   </p>
                 </div>
 
@@ -1165,7 +1162,7 @@ function HomePage() {
                     ))}
                   </div>
                   <p className="text-slate-300 leading-relaxed">
-                    "Outstanding Minecraft Server performance for our Network and 10/10 very supporting and loving
+                    &quot;Outstanding Minecraft Server performance for our Network and 10/10 very supporting and loving&quot;
                   </p>
                 </div>
 
@@ -1186,7 +1183,7 @@ function HomePage() {
                     ))}
                   </div>
                   <p className="text-slate-300 leading-relaxed">
-                    "Incredible value for money. The India VPS servers are blazing fast and their uptime is 99.99 % Highly satisfied customer."
+                    &quot;Incredible value for money. The India VPS servers are blazing fast and their uptime is 99.99 % Highly satisfied customer.&quot;
                   </p>
                 </div>
 

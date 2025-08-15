@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { Server, Bot, Cpu, HardDrive, Zap, CheckCircle, Home, Activity, X } from 'lucide-react';
+import { Server, Bot, Zap, CheckCircle, Home, Activity, X } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 
 function DiscordBotHosting() {

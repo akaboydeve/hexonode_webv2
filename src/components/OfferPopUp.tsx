@@ -47,7 +47,7 @@ const OfferModal = () => {
                     Congratulations!
                 </h2>
 
-                <p className="text-slate-300 mb-4 text-lg">You've unlocked a special offer!</p>
+                <p className="text-slate-300 mb-4 text-lg">You&apos;ve unlocked a special offer!</p>
 
                 <div className="bg-slate-800/50 p-6 rounded-xl mb-6 border border-slate-600">
                     <p className="text-xl font-semibold text-white mb-2">

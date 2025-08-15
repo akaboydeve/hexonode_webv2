@@ -14,7 +14,7 @@ export default function AboutUsPage() {
                 <div className="bg-gray-800 rounded-xl p-8 shadow-lg mb-12">
                     <div className="prose prose-lg prose-invert max-w-none">
                         <p className="text-gray-300 leading-relaxed mb-6">
-                            At Hexonode.com, we are dedicated to providing reliable and high-performance hosting solutions for a variety of needs. Whether you're looking for Minecraft server hosting, VPS hosting, web hosting, or domain hosting, our goal is to offer the best infrastructure and customer service.
+                            At Hexonode.com, we are dedicated to providing reliable and high-performance hosting solutions for a variety of needs. Whether you&apos;re looking for Minecraft server hosting, VPS hosting, web hosting, or domain hosting, our goal is to offer the best infrastructure and customer service.
                         </p>
                         <p className="text-gray-300 leading-relaxed mb-6">
                             We pride ourselves on offering flexible, scalable solutions designed to help individuals, businesses, and game enthusiasts get the most out of their online presence. With our cutting-edge technology, 24/7 support, and a customer-first approach, Hexonode.com is here to make sure your hosting experience is smooth, fast, and secure.

@@ -25,7 +25,7 @@ const PrivacyPolicy: React.FC = () => {
                                 <div>
                                     <h3 className="text-xl font-semibold mb-3">1. Introduction</h3>
                                     <p className="text-gray-300">
-                                        Hexonode.com ("we," "our," "us") respects your privacy. This policy explains how we handle your information when you use our Minecraft server hosting, VPS hosting, webserver hosting, and domain hosting services.
+                                        Hexonode.com (&quot;we,&quot; &quot;our,&quot; &quot;us&quot;) respects your privacy. This policy explains how we handle your information when you use our Minecraft server hosting, VPS hosting, webserver hosting, and domain hosting services.
                                     </p>
                                 </div>
 

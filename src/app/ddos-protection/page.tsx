@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import {
     Shield,
@@ -6,11 +7,8 @@ import {
     Server,
     ArrowRight,
     CheckCircle,
-    Globe,
-    Lock,
     Activity,
     Users,
-    Clock,
     Star,
     ShieldPlus
 } from 'lucide-react';
