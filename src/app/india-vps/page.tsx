@@ -1034,13 +1034,6 @@ function IndiaVPS() {
               </div>
             )}
 
-            {(selectedSection === 'Entry Level') && (
-              <div className="mb-6 p-3 bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border border-emerald-500/20 rounded-xl max-w-xl mx-auto">
-                <p className="text-emerald-300 font-medium">
-                  Recommended For Web hosting and Light weight Tasks
-                </p>
-              </div>
-            )}
 
             <div className="flex flex-wrap justify-center gap-2 mb-8">
               {sections.map((section) => (
@@ -1191,6 +1184,15 @@ function IndiaVPS() {
           </div>
         </div>
       </section>
+
+
+      {(selectedSection === 'Entry Level') && (
+        <div className="mb-4 mt-2 p-3 bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border border-emerald-500/20 rounded-xl max-w-xl mx-auto">
+          <p className="text-emerald-300 font-medium text-center">
+            Recommended For Web hosting and Light weight Tasks
+          </p>
+        </div>
+      )}
 
       {/* More Resources Notice */}
       <section className="py-12 bg-slate-900">
