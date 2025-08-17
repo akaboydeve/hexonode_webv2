@@ -592,7 +592,7 @@ function IndiaVPS() {
   const getCpuModelName = (section: string) => {
     switch (section) {
       case 'Entry Level':
-        return 'Entry Level Processors';
+        return 'Intel Xeon E5-2680 2.70GHz';
       case 'Intel Standard':
         return 'Intel E5-2680 v4 2.4 to 3.3 ghz';
       case 'Intel Performance':
@@ -1025,14 +1025,19 @@ function IndiaVPS() {
               </p>
             </div>
 
-            {(selectedSection === 'Entry Level' || selectedSection === 'Ryzen 5600G 4.4GHz') && (
+            {(selectedSection === 'Ryzen 5600G 4.4GHz') && (
               <div className="mb-6 p-3 bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border border-emerald-500/20 rounded-xl max-w-xl mx-auto">
                 <p className="text-emerald-300 font-medium">
-                  <span className="font-semibold">🖥️ Dedicated Hardware:</span>
-                  {selectedSection === 'Entry Level'
-                    ? ' These machines run on our own dedicated hardware infrastructure'
-                    : ' This Ryzen VPS runs on our own hardware infrastructure'
-                  }
+                  <span className="font-semibold">🖥️ Dedicated Hardware: </span>
+                  This Ryzen VPS runs on our own hardware infrastructure
+                </p>
+              </div>
+            )}
+
+            {(selectedSection === 'Entry Level') && (
+              <div className="mb-6 p-3 bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border border-emerald-500/20 rounded-xl max-w-xl mx-auto">
+                <p className="text-emerald-300 font-medium">
+                  Recommended For Web hosting and Light weight Tasks
                 </p>
               </div>
             )}
