@@ -596,7 +596,7 @@ function IndiaVPS() {
       case 'Intel Standard':
         return 'Intel E5-2680 v4 2.4 to 3.3 ghz';
       case 'AMD EYPC 7':
-        return 'Intel E5-2667 v4 3.2 to 3.6 ghz';
+        return 'AMD EYPC 7763 3.2 GHZ';
       case 'Ryzen 5600G 4.4GHz':
         return 'Ryzen 5 5600G 3.9 to 4.4 GHz';
       case 'Ryzen 9/EYPC 9':
