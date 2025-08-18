@@ -312,7 +312,7 @@ function IndiaVPS() {
         }
       }
     ],
-    'Ryzen 7 4.7GHz': [
+    'Ryzen 7 5800x 4.7 Ghz': [
       {
         name: "Performance Basic",
         price: "₹1,399",
