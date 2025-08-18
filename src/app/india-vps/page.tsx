@@ -14,7 +14,7 @@ function IndiaVPS() {
     window.scrollTo(0, 0);
   }, []);
 
-  const sections = ['Entry Level', 'Intel Standard', 'AMD EYPC 7', 'Ryzen 5600G 4.4GHz', 'Ryzen 9/EYPC 9'];
+  const sections = ['Entry Level', 'Intel Standard', 'AMD EYPC 7', 'Ryzen 7 5800x 4.7 Ghz', 'Ryzen 9/EYPC 9'];
 
   type Plan = {
     name: string;
@@ -563,7 +563,7 @@ function IndiaVPS() {
         return <Cpu className="w-5 h-5" />;
       case 'AMD EYPC 7':
         return <Zap className="w-5 h-5" />;
-      case 'Ryzen 5600G 4.4GHz':
+      case 'Ryzen 7 5800x 4.7 Ghz':
         return <HardDrive className="w-5 h-5" />;
       case 'Ryzen 9/EYPC 9':
         return <Shield className="w-5 h-5" />;
@@ -580,7 +580,7 @@ function IndiaVPS() {
         return 'from-blue-500 to-cyan-500';
       case 'AMD EYPC 7':
         return 'from-purple-500 to-violet-500';
-      case 'Ryzen 5600G 4.4GHz':
+      case 'Ryzen 7 5800x 4.7 Ghz':
         return 'from-orange-500 to-red-500';
       case 'Ryzen 9/EYPC 9':
         return 'from-red-500 to-orange-500';
@@ -597,8 +597,8 @@ function IndiaVPS() {
         return 'Intel E5-2680 v4 2.4 to 3.3 ghz';
       case 'AMD EYPC 7':
         return 'AMD EYPC 7763 / 7313 3.0 TO 3.7 GHZ';
-      case 'Ryzen 5600G 4.4GHz':
-        return 'Ryzen 5 5600G 3.9 to 4.4 GHz';
+      case 'Ryzen 7 5800x 4.7 Ghz':
+        return 'Ryzen 7 5800x 4.7 Ghz';
       case 'Ryzen 9/EYPC 9':
         return 'Ryzen 9 9950x / AMD EPYC 9354P';
       default:
