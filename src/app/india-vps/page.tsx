@@ -14,7 +14,7 @@ function IndiaVPS() {
     window.scrollTo(0, 0);
   }, []);
 
-  const sections = ['Entry Level', 'Intel Standard', 'Intel Performance', 'Ryzen 5600G 4.4GHz', 'Ryzen 9/EYPC 9'];
+  const sections = ['Entry Level', 'Intel Standard', 'AMD EYPC 7', 'Ryzen 5600G 4.4GHz', 'Ryzen 9/EYPC 9'];
 
   type Plan = {
     name: string;
@@ -225,7 +225,7 @@ function IndiaVPS() {
         }
       }
     ],
-    'Intel Performance': [
+    'AMD EYPC 7': [
       {
         name: "Performance Basic",
         price: "₹899",
@@ -561,7 +561,7 @@ function IndiaVPS() {
         return <Home className="w-5 h-5" />;
       case 'Intel Standard':
         return <Cpu className="w-5 h-5" />;
-      case 'Intel Performance':
+      case 'AMD EYPC 7':
         return <Zap className="w-5 h-5" />;
       case 'Ryzen 5600G 4.4GHz':
         return <HardDrive className="w-5 h-5" />;
@@ -578,7 +578,7 @@ function IndiaVPS() {
         return 'from-emerald-500 to-teal-500';
       case 'Intel Standard':
         return 'from-blue-500 to-cyan-500';
-      case 'Intel Performance':
+      case 'AMD EYPC 7':
         return 'from-purple-500 to-violet-500';
       case 'Ryzen 5600G 4.4GHz':
         return 'from-orange-500 to-red-500';
@@ -595,7 +595,7 @@ function IndiaVPS() {
         return 'Intel Xeon E5-2680 2.70GHz';
       case 'Intel Standard':
         return 'Intel E5-2680 v4 2.4 to 3.3 ghz';
-      case 'Intel Performance':
+      case 'AMD EYPC 7':
         return 'Intel E5-2667 v4 3.2 to 3.6 ghz';
       case 'Ryzen 5600G 4.4GHz':
         return 'Ryzen 5 5600G 3.9 to 4.4 GHz';
