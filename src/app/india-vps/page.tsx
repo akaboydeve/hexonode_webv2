@@ -266,7 +266,7 @@ function IndiaVPS() {
         location: "Mumbai",
         setupTime: "2-3 Hours",
         features: ["Full Root Access", "99.9% Uptime", "Priority Support", "DDoS Protection", "Free Setup", "Free SSL", "Daily Backups", "KVM Virtualization", "1 IPv4"],
-        orderLink: "https://billing.hexonode.com/products/india-vps-premium/32gb-vps-india-premium",
+        orderLink: "https://billing.hexonode.com/products/india-amd-performance-vps/32gb-amd-performance-vps/checkout?edit=1&plan=255&options=",
         detailedSpecs: {
           cpuModel: "AMD EYPC 7763/7313",
           cpuCores: "8 vCores",
@@ -295,7 +295,7 @@ function IndiaVPS() {
         location: "Mumbai",
         setupTime: "2-3 Hours",
         features: ["Full Root Access", "99.9% Uptime", "Dedicated Support", "DDoS Protection", "Free Setup", "Free SSL", "Daily Backups", "Priority Support", "KVM Virtualization", "1 IPv4"],
-        orderLink: "https://billing.hexonode.com/products/india-vps-premium/64gb-vps-india-premium",
+        orderLink: "https://billing.hexonode.com/products/india-amd-performance-vps/64gb-amd-performance-vps",
         detailedSpecs: {
           cpuModel: "AMD EYPC 7763/7313",
           cpuCores: "16 vCores",
