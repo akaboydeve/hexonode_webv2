@@ -565,7 +565,7 @@ function IndiaVPS() {
         return <Zap className="w-5 h-5" />;
       case 'Ryzen 7 5800x 4.7 Ghz':
         return <HardDrive className="w-5 h-5" />;
-      case 'Ryzen 9/EYPC 9':
+      case 'Ryzen 9 5900x 4.8 ghz':
         return <Shield className="w-5 h-5" />;
       default:
         return <Cpu className="w-5 h-5" />;
@@ -582,7 +582,7 @@ function IndiaVPS() {
         return 'from-purple-500 to-violet-500';
       case 'Ryzen 7 5800x 4.7 Ghz':
         return 'from-orange-500 to-red-500';
-      case 'Ryzen 9/EYPC 9':
+      case 'Ryzen 9 5900x 4.8 ghz':
         return 'from-red-500 to-orange-500';
       default:
         return 'from-blue-500 to-cyan-500';
@@ -599,8 +599,8 @@ function IndiaVPS() {
         return 'AMD EYPC 7763 / 7313 3.0 TO 3.7 GHZ';
       case 'Ryzen 7 5800x 4.7 Ghz':
         return 'Ryzen 7 5800x 4.7 Ghz';
-      case 'Ryzen 9/EYPC 9':
-        return 'Ryzen 9 9950x / AMD EPYC 9354P';
+      case 'Ryzen 9 5900x 4.8 ghz':
+        return 'Ryzen 9 5900x 4.8 ghz';
       default:
         return 'High Performance Processors';
     }
