@@ -226,6 +226,34 @@ function IndiaVPS() {
       }
     ],
     'Ryzen 9/EYPC 9': [
+ {
+        name: "Ryzen Power",
+        price: "₹1,699",
+        period: "/month",
+        processor: "Ryzen 9 5900x",
+        cores: "4 Cores 3.7 ghz to 4.8 ghz",
+        ram: "16 GB RAM",
+        storage: "80 GB NVMe",
+        bandwidth: "2tb",
+        location: "Mumbai",
+        setupTime: "20 mins",
+        features: ["Full Root Access", "99.9% Uptime", "Gaming Support", "Gaming DDoS Protection", "Free Setup", "Free SSL", "KVM Virtualization", "1 IPv4"],
+        orderLink: "https://billing.hexonode.com/products/india-vps-ultra/16gb-vps-india-ultra",
+        detailedSpecs: {
+          cpuModel: "Ryzen 9 5900x",
+          cpuCores: "4 vCores",
+          cpuSpeed: "3.7 ghz to 4.8 ghz",
+          ramType: "DDR4 RAM",
+          storageType: "NVMe",
+          networkSpeed: "1 Gbps",
+          virtualization: "KVM",
+          operatingSystem: ["Ubuntu", "CentOS", "Debian", "Windows Server"],
+          controlPanel: "Custom Panel",
+          backups: "Daily Backups Manually",
+          monitoring: "Gaming Optimized Monitoring",
+          support: "24/7 Gaming Support"
+        }
+      },
       {
         name: "Ryzen Power",
         price: "₹1,699",
