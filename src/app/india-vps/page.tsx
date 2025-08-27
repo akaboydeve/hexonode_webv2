@@ -270,7 +270,7 @@ function IndiaVPS() {
         orderLink: "https://billing.hexonode.com/products/india-vps-ultra/32gb-vps-india-ultra",
         detailedSpecs: {
           cpuModel: "Ryzen 9 5900x",
-          cpuCores: "8 Cores",
+          cpuCores: "6 Cores",
           cpuSpeed: "4.8 GHz",
           ramType: "DDR4 RAM",
           storageType: "NVMe",
@@ -291,7 +291,7 @@ function IndiaVPS() {
         cores: "8 Cores 3.7 ghz to 4.80 ghz",
         ram: "64 GB RAM",
         storage: "200 GB NVMe",
-        bandwidth: "7TB",
+        bandwidth: "8TB",
         location: "Mumbai",
         setupTime: "2-3 Hours",
         features: ["Full Root Access", "99.9% Uptime", "Dedicated Gaming Support", "Enterprise Gaming DDoS Protection", "Free Setup", "Free SSL", "Daily Backups", "Priority Support", "KVM Virtualization", "1 IPv4"],
