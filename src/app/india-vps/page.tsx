@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { Server, Cpu, HardDrive, Zap, Shield, CheckCircle, Home, X, Clock, Globe, Database, Wifi, Info } from 'lucide-react';
 
 function IndiaVPS() {
-  const [selectedSection, setSelectedSection] = useState<string>('Entry Level');
+  const [selectedSection, setSelectedSection] = useState<string>('Intel Standard');
   const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
   const [selectedPlanDetails, setSelectedPlanDetails] = useState<Plan | null>(null);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -14,7 +14,7 @@ function IndiaVPS() {
     window.scrollTo(0, 0);
   }, []);
 
-  const sections = ['Entry Level', 'Intel Standard', 'AMD EYPC 7', 'Ryzen 7 5800x 4.7 Ghz', 'Ryzen 9/EYPC 9'];
+  const sections = ['Intel Standard', 'AMD EYPC 7', 'Ryzen 9/EYPC 9'];
 
   type Plan = {
     name: string;
@@ -51,93 +51,6 @@ function IndiaVPS() {
   };
 
   const plans: PlansType = {
-    'Entry Level': [
-      {
-        name: "Entry 16GB",
-        price: "₹450",
-        period: "/month",
-        processor: "3 vCores",
-        cores: "3 vCores",
-        ram: "16 GB DDR4",
-        storage: "80 GB SSD",
-        bandwidth: "Unmetered",
-        location: "Noida",
-        setupTime: "Instant",
-        features: ["Full Root Access", "99.9% Uptime", "24/7 Support", "DDoS Protection", "Free Setup", "KVM Virtualization", "1 IPv4"],
-        orderLink: "https://billing.hexonode.com/products/entry-level-vps-indianoida/16gb-vps-entry-level/checkout?plan=258&options=",
-        detailedSpecs: {
-          cpuModel: "Entry Level Processor",
-          cpuCores: "3 vCores",
-          cpuSpeed: "Variable",
-          ramType: "DDR4 ECC",
-          storageType: "SSD RAID-10",
-          networkSpeed: "1 Gbps",
-          virtualization: "KVM",
-          operatingSystem: ["Ubuntu", "CentOS", "Debian", "Windows Server"],
-          controlPanel: "",
-          backups: "Manual Backups",
-          monitoring: "Basic Monitoring",
-          support: "24/7 Ticket Support"
-        }
-      },
-      {
-        name: "Standard 32GB",
-        price: "₹699",
-        period: "/month",
-        processor: "5 vCores",
-        cores: "5 vCores",
-        ram: "32 GB DDR4",
-        storage: "150 GB SSD",
-        bandwidth: "Unmetered",
-        location: "Noida",
-        setupTime: "Instant",
-        features: ["Full Root Access", "99.9% Uptime", "24/7 Support", "DDoS Protection", "Free Setup", "KVM Virtualization", "1 IPv4"],
-        orderLink: "https://billing.hexonode.com/products/entry-level-vps-indianoida/32gb-vps-entry-level/checkout?plan=259&options=",
-        detailedSpecs: {
-          cpuModel: "Entry Level Processor",
-          cpuCores: "5 vCores",
-          cpuSpeed: "Variable",
-          ramType: "DDR4 ECC",
-          storageType: "SSD RAID-10",
-          networkSpeed: "1 Gbps",
-          virtualization: "KVM",
-          operatingSystem: ["Ubuntu", "CentOS", "Debian", "Windows Server"],
-          controlPanel: "",
-          backups: "Manual Backups",
-          monitoring: "Basic Monitoring",
-          support: "24/7 Ticket Support"
-        }
-      },
-      {
-        name: "Performance 64GB",
-        price: "₹1,099",
-        period: "/month",
-        featured: true,
-        processor: "8 vCores",
-        cores: "8 vCores",
-        ram: "64 GB DDR4",
-        storage: "250 GB SSD",
-        bandwidth: "Unmetered",
-        location: "Noida",
-        setupTime: "Instant",
-        features: ["Full Root Access", "99.9% Uptime", "24/7 Support", "DDoS Protection", "Free Setup", "Free SSL", "KVM Virtualization", "1 IPv4"],
-        orderLink: "https://billing.hexonode.com/products/entry-level-vps-indianoida/64gb-vps-entry-level/checkout?plan=260&options=",
-        detailedSpecs: {
-          cpuModel: "Entry Level Processor",
-          cpuCores: "8 vCores",
-          cpuSpeed: "Variable",
-          ramType: "DDR4 ECC",
-          storageType: "SSD RAID-10",
-          networkSpeed: "1 Gbps",
-          virtualization: "KVM",
-          operatingSystem: ["Ubuntu", "CentOS", "Debian", "Windows Server"],
-          controlPanel: "",
-          backups: "Manual Backups",
-          monitoring: "Enhanced Monitoring",
-          support: "24/7 Priority Support"
-        }
-      }
-    ],
     'Intel Standard': [
       {
         name: "Standard Mini",
@@ -312,121 +225,6 @@ function IndiaVPS() {
         }
       }
     ],
-    'Ryzen 7 5800x 4.7 Ghz': [
-      {
-        name: "Performance Basic",
-        price: "₹1,399",
-        period: "/month",
-        processor: "Ryzen 7 5800x 3.8 to 4.7 GHz",
-        cores: "4 vCores ",
-        ram: "16 GB DDR4",
-        storage: "80 GB NVMe",
-        bandwidth: "Unmetered",
-        location: "Mumbai",
-        setupTime: "2-3 Hours",
-        features: ["Full Root Access", "99.9% Uptime", "Priority Support", "DDoS Protection", "Free Setup", "Free SSL", "KVM Virtualization", "1 IPv4", "Dedicated Performance"],
-        orderLink: "https://billing.hexonode.com/products/india-amd-performance-vps/16gb-amd-performance-vps/checkout?plan=254&options=",
-        detailedSpecs: {
-          cpuModel: "Ryzen 7 5800x ",
-          cpuCores: "4 vCores",
-          cpuSpeed: "3.8-4.7 GHz",
-          ramType: "DDR4 ECC",
-          storageType: "NVMe SSD RAID-10",
-          networkSpeed: "1 Gbps",
-          virtualization: "KVM",
-          operatingSystem: ["Ubuntu", "CentOS", "Debian", "Windows Server"],
-          controlPanel: "Custom Panel",
-          backups: "Daily Backups",
-          monitoring: "Premium Monitoring",
-          support: "24/7 Priority Support"
-        }
-      },
-      {
-        name: "Performance Advanced",
-        price: "₹2,500",
-        period: "/month",
-        processor: "Ryzen 7 5800x 3.8 to 4.7 GHz",
-        cores: "6 vCores ",
-        ram: "32 GB DDR4",
-        storage: "150 GB NVMe",
-        bandwidth: "Unmetered",
-        location: "Mumbai",
-        setupTime: "2-3 Hours",
-        features: ["Full Root Access", "99.9% Uptime", "Priority Support", "DDoS Protection", "Free Setup", "Free SSL", "Daily Backups", "KVM Virtualization", "1 IPv4", "Dedicated Performance"],
-        orderLink: "https://billing.hexonode.com/products/india-amd-performance-vps/32gb-amd-performance-vps/checkout?plan=255&options=",
-        detailedSpecs: {
-          cpuModel: "Ryzen 7 5800x",
-          cpuCores: "6 vCores",
-          cpuSpeed: "3.8-4.7 GHz",
-          ramType: "DDR4 ECC",
-          storageType: "NVMe SSD RAID-10",
-          networkSpeed: "1 Gbps",
-          virtualization: "KVM",
-          operatingSystem: ["Ubuntu", "CentOS", "Debian", "Windows Server"],
-          controlPanel: "Custom Panel",
-          backups: "Daily Backups",
-          monitoring: "Premium Monitoring",
-          support: "24/7 Priority Support"
-        }
-      },
-      {
-        name: "Performance PACKAGE",
-        price: "₹2,999",
-        period: "/month",
-        processor: "Ryzen 7 5800x 3.8 to 4.7 GHz",
-        cores: "8 vCores ",
-        ram: "48 GB DDR4",
-        storage: "200 GB NVMe",
-        bandwidth: "Unmetered",
-        location: "Mumbai",
-        setupTime: "2-3 Hours",
-        features: ["Full Root Access", "99.9% Uptime", "Priority Support", "DDoS Protection", "Free Setup", "Free SSL", "Daily Backups", "KVM Virtualization", "1 IPv4", "Dedicated Performance"],
-        orderLink: "https://billing.hexonode.com/products/india-amd-performance-vps/32gb-amd-performance-vps/checkout?plan=255&options=",
-        detailedSpecs: {
-          cpuModel: "Ryzen 7 5800x",
-          cpuCores: "8 vCores",
-          cpuSpeed: "3.8-4.7 GHz",
-          ramType: "DDR4 ECC",
-          storageType: "NVMe SSD RAID-10",
-          networkSpeed: "1 Gbps",
-          virtualization: "KVM",
-          operatingSystem: ["Ubuntu", "CentOS", "Debian", "Windows Server"],
-          controlPanel: "Custom Panel",
-          backups: "Daily Backups",
-          monitoring: "Premium Monitoring",
-          support: "24/7 Priority Support"
-        }
-      },
-      {
-        name: "Performance Elite",
-        price: "₹3,600",
-        period: "/month",
-        featured: true,
-        processor: "Ryzen 7 5800x  3.8 to 4.7 GHz",
-        cores: "10 vCores ",
-        ram: "64 GB DDR4",
-        storage: "250 GB NVMe",
-        bandwidth: "Unmetered",
-        location: "Mumbai",
-        setupTime: "2-3 Hours",
-        features: ["Full Root Access", "99.9% Uptime", "Dedicated Support", "DDoS Protection", "Free Setup", "Free SSL", "Daily Backups", "Priority Support", "KVM Virtualization", "1 IPv4", "Dedicated Performance"],
-        orderLink: "https://billing.hexonode.com/products/india-amd-performance-vps/64gb-amd-performance-vps/checkout?plan=256&options=",
-        detailedSpecs: {
-          cpuModel: "Ryzen 7 5800x",
-          cpuCores: "10 vCores ",
-          cpuSpeed: "3.8-4.7 GHz",
-          ramType: "DDR4 ECC",
-          storageType: "NVMe SSD RAID-10",
-          networkSpeed: "1 Gbps",
-          virtualization: "KVM",
-          operatingSystem: ["Ubuntu", "CentOS", "Debian", "Windows Server"],
-          controlPanel: "Custom Panel",
-          backups: "Daily Backups",
-          monitoring: "Premium Monitoring",
-          support: "24/7 Dedicated Support"
-        }
-      }
-    ],
     'Ryzen 9/EYPC 9': [
       {
         name: "Ryzen Power",
@@ -557,15 +355,11 @@ function IndiaVPS() {
 
   const getSectionIcon = (section: string) => {
     switch (section) {
-      case 'Entry Level':
-        return <Home className="w-5 h-5" />;
       case 'Intel Standard':
         return <Cpu className="w-5 h-5" />;
       case 'AMD EYPC 7':
         return <Zap className="w-5 h-5" />;
-      case 'Ryzen 7 5800x 4.7 Ghz':
-        return <HardDrive className="w-5 h-5" />;
-      case 'Ryzen 9 5900x 4.8 ghz':
+      case 'Ryzen 9/EYPC 9':
         return <Shield className="w-5 h-5" />;
       default:
         return <Cpu className="w-5 h-5" />;
@@ -574,15 +368,11 @@ function IndiaVPS() {
 
   const getSectionColor = (section: string) => {
     switch (section) {
-      case 'Entry Level':
-        return 'from-emerald-500 to-teal-500';
       case 'Intel Standard':
         return 'from-blue-500 to-cyan-500';
       case 'AMD EYPC 7':
         return 'from-purple-500 to-violet-500';
-      case 'Ryzen 7 5800x 4.7 Ghz':
-        return 'from-orange-500 to-red-500';
-      case 'Ryzen 9 5900x 4.8 ghz':
+      case 'Ryzen 9/EYPC 9':
         return 'from-red-500 to-orange-500';
       default:
         return 'from-blue-500 to-cyan-500';
@@ -591,15 +381,11 @@ function IndiaVPS() {
 
   const getCpuModelName = (section: string) => {
     switch (section) {
-      case 'Entry Level':
-        return 'Intel Xeon E5-2680 2.70GHz';
       case 'Intel Standard':
         return 'Intel E5-2680 v4 2.4 to 3.3 ghz';
       case 'AMD EYPC 7':
         return 'AMD EYPC 7763 / 7313 3.0 TO 3.7 GHZ';
-      case 'Ryzen 7 5800x 4.7 Ghz':
-        return 'Ryzen 7 5800x 4.7 Ghz';
-      case 'Ryzen 9 5900x 4.8 ghz':
+      case 'Ryzen 9/EYPC 9':
         return 'Ryzen 9 5900x 4.8 ghz';
       default:
         return 'High Performance Processors';
@@ -1025,16 +811,6 @@ function IndiaVPS() {
               </p>
             </div>
 
-            {(selectedSection === 'Ryzen 5600G 4.4GHz') && (
-              <div className="mb-6 p-3 bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border border-emerald-500/20 rounded-xl max-w-xl mx-auto">
-                <p className="text-emerald-300 font-medium">
-                  <span className="font-semibold">🖥️ Dedicated Hardware: </span>
-                  This Ryzen VPS runs on our own hardware infrastructure
-                </p>
-              </div>
-            )}
-
-
             <div className="flex flex-wrap justify-center gap-2 mb-8">
               {sections.map((section) => (
                 <button
@@ -1184,15 +960,6 @@ function IndiaVPS() {
           </div>
         </div>
       </section>
-
-
-      {(selectedSection === 'Entry Level') && (
-        <div className="mb-4 mt-2 p-3 bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border border-emerald-500/20 rounded-xl max-w-xl mx-auto">
-          <p className="text-emerald-300 font-medium text-center">
-            Recommended For Web hosting and Light weight Tasks
-          </p>
-        </div>
-      )}
 
       {/* More Resources Notice */}
       <section className="py-12 bg-slate-900">
