@@ -353,7 +353,7 @@ function MinecraftIndia() {
     'Ryzen 9': [
       {
         name: "8GB GOLD",
-        price: "₹799",
+        price: "₹899",
         period: "/month",
         specs: [
           "Unlimited Player Slots",
@@ -361,7 +361,7 @@ function MinecraftIndia() {
           "5.7 GHZ",
           "200% CPU",
           "8GB DDR5 RAM ECC",
-          "50GB NVMe SSD Storage",
+          "25GB NVMe SSD Storage",
           "3 Database",
           "3 Additional Ports",
           "24/7 Ticket Support"
@@ -378,7 +378,7 @@ function MinecraftIndia() {
           "RYZEN 9 / EYPC 9 4.0ghz+",
           "400% CPU",
           "16GB DDR5 RAM ECC",
-          "80GB NVMe SSD Storage",
+          "50GB NVMe SSD Storage",
           "5 Database",
           "5 Additional Ports",
           "24/7 Ticket Support"
@@ -395,7 +395,7 @@ function MinecraftIndia() {
           "RYZEN 9 / EYPC 9 4.0ghz+",
           "UNLIMITED CPU",
           "32GB DDR5 RAM ECC",
-          "150GB NVMe SSD Storage",
+          "80GB NVMe SSD Storage",
           "7 Database",
           "7 Additional Ports",
           "24/7 Ticket Support"
@@ -412,7 +412,7 @@ function MinecraftIndia() {
           "RYZEN 9 / EYPC 9 4.0ghz+",
           "UNLIMITED CPU",
           "44GB DDR5 RAM ECC",
-          "200GB NVMe SSD Storage",
+          "100GB NVMe SSD Storage",
           "9 Database",
           "9 Additional Ports",
           "24/7 Ticket Support"
